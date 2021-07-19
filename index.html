@@ -1,12 +1,128 @@
 <!DOCTYPE html>
-<html lang="ru">
-  <head>
-    <meta charset="utf-8">
-    <title>HTML Academy: Нёрдс</title>
-  </head>
-  <body>
+<html>
+<head>
+	<title>Nёrds</title>
+	<link rel="icon" href="img/favico.svg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+	<!--Header-->
+	<div class="container">
+		<header class="header">
+			<nav class="nav">
+				<a href="index.html" class="logo"><img src="img/logo.svg" width="160" height="65" alt="logo"></a>
+				<ul class="nav_list">
+					<li><a href="index.html" class="nav_link">СТУДИЯ</a></li>
+					<li><a href="" class="nav_link">КЛИЕНТЫ</a></li>
+					<li><a href="catalog.html" class="nav_link">МАГАЗИН</a></li>
+					<li><a href="" class="nav_link">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="nav_cart">
+					<img src="img/cart-icon.svg" width="15" height="15" alt="Корзина" class="nav_cart_img">
+					<a href="" class="cart">КОРЗИНА</a>
+				</div>
+			</nav>
+		</header>
+	<!--Main-->
+	<main>
+		<section class="slider">
+			
+			<div class="slide_1st">
+				<h1 class="slide_1st_slogan">Долго, дорого, скрупулёзно.</h1>
+				<p class="slide_1st_desc">Математически выверенный дизайн для вашего сайта или мобильного приложения.</p>
+				<a href="#" class="slide_1st_btn">УЗНАТЬ БОЛЬШЕ</a>
+			</div>
+			
+			<img src="img/mainpic.png" alt="" class="slide_1st_img">
+		</section>
+	</div>
 
-    <p>Репозиторий создан для обучения на профессиональном онлайн‑курсе «<a href="https://htmlacademy.ru/intensive/htmlcss">HTML и CSS. Профессиональная вёрстка сайтов</a>».</p>
+	<section class="offers">
+		<div class="offers_list">
+			<div class="offers_li">
+				<img src="img/web.jpg" width="300" height="145">
+				<h2 class="offers_li_h2">ВЕБ-САЙТЫ</h2>
+				<p class="offers_li_p">Мир никогда не будет прежним после того как увидит ваш сайт!</p>
+				<a href="#" class="offers_btn web_btn">ЗАКАЗАТЬ</a>
+			</div>
+			<div class="offers_li">
+				<img src="img/apps.jpg" width="300" height="145">
+				<h2 class="offers_li_h2">ПРИЛОЖЕНИЯ</h2>
+				<p class="offers_li_p">Покорите топ-10 приложений в AppStore и GooglePlay</p>
+				<a href="#" class="offers_btn apps_btn">ЗАКАЗАТЬ</a>
+			</div>
+			<div class="offers_li">
+				<img src="img/presentation.jpg" width="300" height="145">
+				<h2 class="offers_li_h2">ПРЕЗЕНТАЦИИ</h2>
+				<p class="offers_li_p">Вы даже не подозреваете, насколько вы изумительны!</p>
+				<a href="#" class="offers_btn presentation_btn">ЗАКАЗАТЬ</a>
+			</div>
+		</div>
+	</section>
 
-  </body>
+	<section class="about">
+		<div class="about_main">
+			<h1 class="about_slogan">Мы — маленькая, но гордая дизайн-студия из Краснодара.</h1>
+			<p class="about_desc">Исповедуем принципы минимализма и чистоты. Ставим математический расчет превыше креатива. Работаем не покладая рук, как роботы.</p>
+			<p class="about_orders">ВЫПОЛНЯЕМ ЗАКАЗЫ НА РАЗРАБОТКУ:</p>
+			<ul class="about_orders_list">
+				<li class="orders_li">Веб-сайтов любой сложности</li>
+				<li class="orders_li">Мобильных приложений для iOS и Android</li>
+				<li class="orders_li">Слайдшоу и видео для корпоративных презентаций</li>
+			</ul>
+		</div>
+		<div class="about_advantages">
+			<img src="img/nёrds.jpg" class="about_advantages_img">
+			<p class="about_advantages_slogan">C 2004 года Любим точность во всем:</p>
+			<ul class="about_advantages_list">
+				<li class="about_advantages_li">
+					<p class="about_advantages_numb">146<sup class="about_advantages_percent">%</sup></p>
+					<p class="about_advantages_txt">Уровень самоотдачи</p>
+				</li>
+				<li class="about_advantages_li">
+					<p class="about_advantages_numb">100<sup class="about_advantages_percent">%</sup></p>
+					<p class="about_advantages_txt">Соблюдение сроков</p>
+				</li>
+				<li class="about_advantages_li">
+					<p class="about_advantages_numb">50<sup class="about_advantages_percent">%</sup></p>
+					<p class="about_advantages_txt">Минимальная предоплата</p>
+				</li>
+			</ul>
+		</div>
+	</section>
+
+	<section class="partners">
+		<div class="partners_main">
+			<a href="" class="partners_link"><img src="img/htmlacademy.svg" width="200" height="70" alt="html academy" class="partners_logo"></a>
+			<a href="" class="partners_link"><img src="img/borodinski.png" width="210" height="90" alt="borodinski barbershop" class="partners_logo"></a>
+			<a href="" class="partners_link"><img src="img/pink.png" width="185" height="52" alt="pink" class="partners_logo"></a>
+			<a href="" class="partners_link"><img src="img/mishka.png" width="175" height="85" alt="mishka" class="partners_logo"></a>
+		</div>
+	</section>
+
+	<section class="geolocation">
+		<div class="geo_main">
+			<p class="geo_title">NЁRDS DESIGN STUDIO</p>
+			<p class="geo_info">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+			<a href="tel:+78122757575" class="geo_contacts">тел. +7 (812) 275-75-75</a>
+			<a href="#" class="geo_btn">НАПИШИТЕ НАМ</a>
+		</div>
+		<div class="geo_map">
+			<img src="img/map.jpg" width="1440" height="415" class="geo-img" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+		</div>
+	</section>
+	</main>
+	<footer class="footer">
+		<div>
+			<a href="#" class="social"><img src="img/vk.svg" width="81" height="81" alt="ВКонтакте"></a>
+			<a href="#" class="social"><img src="img/facebook.svg" width="81" height="81" alt="Facebook"></a>
+			<a href="#" class="social"><img src="img/instagram.svg" width="81" height="81" alt="Instagram"></a>
+		</div>
+		<div class="footer_end">
+			<h1 class="footer_slogan">Давайте дружить, это выгодно!</h1>
+			<p class="footer_txt">Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
 </html>

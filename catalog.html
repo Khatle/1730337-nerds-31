@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Nёrds Catalog</title>
+	<link rel="icon" href="img/favico.svg">
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap">
+</head>
+<body>
+	<!--Header-->
+	<div class="container">
+		<header class="header">
+			<nav class="nav">
+				<a href="index.html" class="logo"><img src="img/logo.svg" width="160" height="65" alt="логотип" class="logo"></a>
+				<ul class="nav_list">
+					<li><a href="index.html" class="nav_link">СТУДИЯ</a></li>
+					<li><a href="#" class="nav_link">КЛИЕНТЫ</a></li>
+					<li><a href="catalog.html" class="nav_link">МАГАЗИН</a></li>
+					<li><a href="#" class="nav_link">КОНТАКТЫ</a></li>
+				</ul>
+				<div class="nav_cart">
+					<img src="img/cart-icon.svg" class="nav_cart_img" width="15" height="15" alt="Корзина">
+					<a href="#" class="cart">КОРЗИНА</a>
+				</div>
+			</nav>
+			<div>
+				<h1 class="header_title">Магазин готовых шаблонов</h1>
+			</div>
+		</header>
+	</div>
+
+	<!--Price List-->
+	<main class="price_list">
+		<section class="filter">
+			<p class="filter_txt">СТОИМОСТЬ:</p>
+			<div class="cost_filter"></div>
+			<div class="cost_range">
+				<div>
+					<label class="cost_num_from">ОТ</label><input class="cost_from_up_to" id="cost_num_from" type="number" value="0">
+				</div>
+				<div>
+					<label class="cost_num_up_to">ДО</label><input class="cost_from_up_to" id="cost_num_up_to" type="number" value="15000"> 
+				</div>
+			</div>
+
+	<!--Grid-->
+			<div class="grid_settings">
+				<p class="grid_setting_txt">СЕТКА:</p>
+				<ul class="grid_settings_view">
+					<li class="grid_settings_li">
+						<input class="grid_radio_hidden grid_radio" id="r1" type="radio">
+						<label class="grid_radio" for="r1">Адаптивная</label> 
+					</li>
+					<li class="grid_settings_li">
+						<input class="grid_radio_hidden grid_radio" id="r2" type="radio">
+						<label class="grid_radio" for="r2">Фиксированная</label> 
+					</li>
+					<li class="grid_settings_li">
+						<input class="grid_radio_hidden grid_radio" id="r3" type="radio">
+						<label class="grid_radio" for="r3">Резиновая</label> 
+					</li>
+				</ul>
+			</div>
+
+	<!--Features-->
+			<div class="features">
+				<p class="features_txt">ОСОБЕННОСТИ:</p>
+				<ul class="features_list">
+					<li class="features_li">
+						<input class="features_checkbox" id="features_checkbox_1" type="checkbox"><label class="features_li_txt" for="features_checkbox_1">Слайдер</label>
+					</li>
+					<li class="features_li">
+						<input class="features_checkbox" id="features_checkbox_2" type="checkbox"><label class="features_li_txt" for="features_checkbox_2">Блок преимуществ</label>
+					</li>
+					<li class="features_li">
+						<input class="features_checkbox" id="features_checkbox_3" type="checkbox"><label class="features_li_txt" for="features_checkbox_3">Новости</label>
+					</li>
+					<li class="features_li">
+						<input class="features_checkbox" id="features_checkbox_4" type="checkbox"><label class="features_li_txt" for="features_checkbox_4">Галерея</label>
+					</li>
+					<li class="features_li">
+						<input class="features_checkbox" id="features_checkbox_5" type="checkbox"><label class="features_li_txt" for="features_checkbox_5">Корзина</label>
+					</li>
+				</ul>
+				<button class="features_btn">ПОКАЗАТЬ</button>
+			</div>
+		</section>
+
+	<!--Layouts-->
+		<div class="layouts">
+			<div class="layouts_sorting">
+				<p class="layouts_sorting_txt">СОРТИРОВАТЬ:</p>
+				<ul class="layouts_options">
+					<li class="layouts_sorting_li"><a href="#">ПО ЦЕНЕ</a></li>
+					<li class="layouts_sorting_li"><a href="#">ПО ТИПУ</a></li>
+					<li class="layouts_sorting_li"><a href="#">ПО НАЗВАНИЮ</a></li>
+					<li class="layouts_sorting_arrow arrow_down"><a href="#"></a></li>
+					<li class="layouts_sorting_arrow arrow_up"><a href="#"></a></li>
+				</ul>
+			</div>
+
+			<div class="layouts_list">
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/sedona.jpg" width="360" height="580" alt="Sedona">
+					<div class="layout_info">
+						<p class="layout_info_name">SEDONA</p>
+						<p class="layout_info_desc">Информационный сайт для туристов</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div>
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/pink.jpg" width="360" height="580" alt="Pink app">
+					<div class="layout_info">
+						<p class="layout_info_name">PINK APP</p>
+						<p class="layout_info_desc">Продуктовый лендинг приложения для iOS и Android</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div> 
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/borodinski.jpg" width="360" height="580" alt="Borodinski barbershop">
+					<div class="layout_info">
+						<p class="layout_info_name">BORODINSKI</p>
+						<p class="layout_info_desc">Сайт салона красоты. Для мужчин, да.</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div>
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/mishka.jpg" width="360" height="580" alt="Mishka shop">
+					<div class="layout_info">
+						<p class="layout_info_name">MISHKA</p>
+						<p class="layout_info_desc">Интернет-магазин вязаных игрушек</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div>
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/aplus.jpg" width="360" height="580" alt="A-plus courses">
+					<div class="layout_info">
+						<p class="layout_info_name">A-PLUS</p>
+						<p class="layout_info_desc">Лендинг курсов повышения квалификации</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div>   
+
+				<div class="layout">
+					<div class="round">
+						<div></div>
+						<div></div>
+						<div></div>
+					</div>
+					<img src="img/kvast.jpg" width="360" height="580" alt="Kvast drinks">
+					<div class="layout_info">
+						<p class="layout_info_name">КВАСТ</p>
+						<p class="layout_info_desc">Промо-сайт производителя крафтового кваса</p>
+						<button class="layout_info_price">9 900 ₽</button>
+					</div>
+				</div>
+			</div>
+
+	<!--Layouts Navigation-->
+			<div class="layout_nav">
+				<a href="#" class="layout_link">1</a>
+				<a href="#" class="layout_link">2</a>
+				<a href="#" class="layout_link">3</a>
+				<a href="#" class="layout_link nav_next">СЛЕДУЮЩАЯ</a>
+			</div>
+		</div>
+	</main>
+	<!--Geolocation-->
+	<section class="geolocation">
+		<div class="geo_main">
+			<p class="geo_title">NЁRDS DESIGN STUDIO</p>
+			<p class="geo_info">наб. Реки Карповки, 5 лит П, Санкт-Петербург</p>
+			<a href="tel:+78005558628" class="geo_contacts">+7 800 555-86-28</a>
+			<a href="#" class="geo_btn">НАПИШИТЕ НАМ</a>
+		</div>
+		<div class="geo_map">
+			<img src="img/map.jpg" width="1440" height="415" class="geo-img" alt="191186, Санкт-Петербург, ул. Б. Конюшенная, д. 19/8">
+		</div>
+	</section>
+
+	<footer class="footer">
+		<div>
+			<a href="#" class="social"><img src="img/vk.svg" width="81" height="81" alt="ВКонтакте"></a>
+			<a href="#" class="social"><img src="img/facebook.svg" width="81" height="81" alt="Facebook"></a>
+			<a href="#" class="social"><img src="img/instagram.svg" width="81" height="81" alt="Instagram"></a>
+		</div>
+		<div class="footer_end">
+			<h1 class="footer_slogan">Давайте дружить, это выгодно!</h1>
+			<p class="footer_txt">Скидка 10% для друзей из социальных сетей.</p>
+		</div>
+	</footer>
+</body>
+</html>
+=======
+<html lang="ru">
+  <head>
+    <link rel="stylesheet" type="text/css" href="">
+    <meta charset="utf-8">
+    <title>HTML Academy: Нёрдс</title>
+  </head>
+  <body>
+
+    <!--Main Info-->
+    <main>
+    <!--Header-->
+    <header class="header">
+      <nav class="nav">
+        <img src="https://via.placeholder.com/150x100" alt="" alt="nёrds">
+          <a href="">Студия</a>
+          <a href="">Клиенты</a>
+          <a href="">Магазин</a>
+          <a href="">Контакты</a>
+          <a href="">Корзина</a>
+          </nav>
+    </header>
+    <h1>Магазин готовых шаблонов</h1>
+
+      <!--Стоимость-->
+    <h2>СТОИМОСТЬ:</h2>
+      <fieldset>
+        <legend>СЕТКА:</legend>
+          <input type="checkbox">Адаптивная</input>
+          <input type="checkbox">Фиксированная</input>
+          <input type="checkbox">Резиновая</input>
+
+        <legend>ОСОБЕННОСТИ:</legend>
+          <input type="checkbox">Слайдер</input>
+          <input type="checkbox">Блок преимуществ</input>
+          <input type="checkbox">Новости</input>
+          <input type="checkbox">Галлерея</input>
+          <input type="checkbox">Корзина</input>
+      </fieldset>
+      <button class="button">Показать</button>
+
+      <!--Сортировка-->
+      <fieldset>
+        <legend>СОРТИРОВАТЬ:</legend>
+          <input type="checkbox">ПО ЦЕНЕ</input>
+          <input type="checkbox">ПО ТИПУ</input>
+          <input type="checkbox">ПО НАЗВАНИЮ</input>
+      </fieldset>
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="https://via.placeholder.com/150x100" alt="">
+        <img src="https://via.placeholder.com/150x100" alt="">
+    </main>
+    
+        <!--Подвал-->
+      <footer>
+        <h1>Давайте дружить, это выгодно!</h1>
+        <p>Скидка 10% для друзей из социальных сетей.</p>
+       </footer>
+  </body>
+</html>
